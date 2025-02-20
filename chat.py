@@ -83,15 +83,15 @@ class ChatWindow(QMainWindow):
         sidebar_layout.addSpacing(20)
         
         # System prompt selection: add a label and combo box.
-        system_prompt_label = QLabel("Select System Prompt")
+        system_prompt_label = QLabel("System Prompt")
         sidebar_layout.addWidget(system_prompt_label)
         
         self.system_prompt_combo = QComboBox()
         # Add system prompt options.
         self.system_prompt_combo.addItem("None", "")
-        self.system_prompt_combo.addItem("Pirate", "You talk like a pirate.")
-        self.system_prompt_combo.addItem("french", "you are a french speaker.")
-        self.system_prompt_combo.addItem("Sarcastic", "You are sarcastic.")
+        self.system_prompt_combo.addItem("Code", "You are a code assistant. You are given a code snippet and you need to explain it to the user in a way that is easy to understand. Like a teacher explaining to a five year old.")
+        self.system_prompt_combo.addItem("Explain", "You are a explainer. You explain things in a way that is easy to understand. For a five year old.")
+        self.system_prompt_combo.addItem("Scientific", "You are a scientific explainer. You explain things in a detailed and scientific way.")
         sidebar_layout.addWidget(self.system_prompt_combo)
         
         sidebar_layout.addStretch()  # Push the buttons to the top
@@ -141,7 +141,7 @@ class ChatWindow(QMainWindow):
         self.chat_display.clear()
         self.input_line.clear()
         self.input_line.setEnabled(True)
-        self.setWindowTitle(f"{self.current_model_name} Chat Interface")
+        self.setWindowTitle(f"{self.current_model_name}")
         # Clear stored conversation history when starting fresh.
         self.conversation_history = []
        
