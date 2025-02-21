@@ -102,7 +102,7 @@ class ChatWindow(QMainWindow):
         
         self.chat_display = QTextEdit()
         # Set the font size to 16px using a stylesheet.
-        self.chat_display.setStyleSheet("font-size: 16px; font-family: 'Arial', sans-serif;")
+        self.chat_display.setStyleSheet("font-size: 16px; font-family: 'Arial';")
         self.chat_display.setReadOnly(True)
 
         chat_layout.addWidget(self.chat_display)

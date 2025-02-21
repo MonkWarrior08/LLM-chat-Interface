@@ -14,7 +14,6 @@ client = OpenAI(api_key=api_key)
 def get_response(prompt, system_prompt= None):
     response = client.chat.completions.create(
         model="o3-mini",
-        reasoning_effort="medium",
         messages=[
             {
                 "role": "system",
