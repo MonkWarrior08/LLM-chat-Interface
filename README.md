@@ -1,4 +1,5 @@
 # LLM-chat-Interface
+<img width="792" alt="Screenshot 2025-02-21 at 11 45 12 AM" src="https://github.com/user-attachments/assets/64211981-fd75-499e-8630-de03cb39af71" />
 
 A simple PyQt6-based chat interface that lets you interact with multiple language models (Gemini, O3 Mini, and O1) in a single application. The interface supports a multi-line text input with an intuitive Enter/Return key functionality and displays responses using markdown formatting.
 
