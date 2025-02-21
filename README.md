@@ -56,7 +56,7 @@ A simple PyQt6-based chat interface that lets you interact with multiple languag
 
 3. **Install Dependencies:**
 
-  If you have a `requirements.txt`, install via:
+  Using `requirements.txt`, install via:
 
   ```bash
   pip install -r requirements.txt
