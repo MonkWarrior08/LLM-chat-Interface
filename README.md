@@ -1,4 +1,4 @@
-# Multi-Model Chat Interface
+# PyQt6 Multi-Model Chat
 <img width="792" alt="Screenshot 2025-02-21 at 11 45 12 AM" src="https://github.com/user-attachments/assets/64211981-fd75-499e-8630-de03cb39af71" />
 
 A simple PyQt6-based chat interface that lets you interact with multiple language models (Gemini, O3 Mini, and O1) in a single application. The interface supports a multi-line text input with an intuitive Enter/Return key functionality and displays responses using markdown formatting.
@@ -23,8 +23,7 @@ A simple PyQt6-based chat interface that lets you interact with multiple languag
   Contains the main GUI application, model selection logic, conversation history management, and response handling. It uses a custom `InputTextEdit` widget to capture multi-line input and sends messages to the selected model.
 
 - **gemini.py:**  
-  Implements the API integration for the Gemini model using Google Gen AI. It builds a prompt by combining a system prompt with the user input before sending the request.
-
+  Implements API integration for the Gemini model (Flash 2.0), which is enhanced with the Google Retrieval tool to allow direct internet access. It constructs a query by merging a system prompt with user input before dispatching the request.
 - **o3.py:**  
   Integrates with the OpenAI API to use the O3 Mini model. It sends chat-style messages including a system prompt (if provided) and user prompt.
 
