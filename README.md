@@ -43,8 +43,8 @@ A simple PyQt6-based chat interface that lets you interact with multiple languag
 1. **Clone the Repository:**
 
   ```bash
-  git clone https://github.com/yourusername/LLM-chat-Interface.git
-  cd LLM-chat-Interface
+  git clone https://github.com/yourusername/PyQt6_Multi-Model_Chat.git
+  cd PyQt6_Multi-Model_Chat
   ```
 
 2. **Create a Virtual Environment (Optional but Recommended):**
